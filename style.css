@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(223, 225, 226);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url('webbg.png');
+}
+}
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+.services {
+grid-template-columns: 1fr 2fr 2fr;
+}}
+@media (max-width: 375px) {
+  .services {
+  grid-template-columns: 1fr 2fr 2fr;
+  }
+}
+@media (max-width: 320px) {
+  .services {
+  grid-template-columns: 1fr 2fr 2fr;
+  }
+}
+.header h1 {
+  font-size: 40px;
+  color: black;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  padding: 10px;
+  font-size: larger;
+}
+.nav a {
+  color: #333;
+  text-decoration: none;
+}
+.nav a:hover {
+    background-color: blue;
+  color: rgb(255, 0, 191);
+}
+.nav a:active{
+  color: orange;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  background-image: url('bg-image1.jpg');
+}
+.card {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #130303;
+  background-color: #080808;
+  transition: transform .3s, box-shadow .3s;
+}
+.card:hover {
+  /* I added a transform and a box-shadow to the card on hover */
+  transform: scale(1.1);
+  box-shadow: #a51e1e 3px 4px 10px;
+ }
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h3 {
+  padding: 10px;
+  text-align: center;
+}
+.card p {
+  padding: 10px;
+}
+body{
+  background-color:;
+}
+.card a {
+  display: block;
+  padding: 10px;
+  background-color: #f00;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.card a:hover {
+  background-color: #f33;
+}
+.about {
+  display: block;
+  align-items: center;
+  margin: 20px;
+}
+.about img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: 20px;
+  background-color: #a51e1e;
+  float: right;
+}
+
+#as{
+height: 10%;
+width: 10%;
+
+background-color: #a51e1e;
+}
+.about h2 {
+  margin-left: 20px;
+  font-size: 30px;
+}
+.about p {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 21%;
+  transition: transform .3s, box-shadow .3s;
+}
+.skill:hover {
+  background-color: #f33;
+}
+.skill {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #080808;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill:hover{
+  background-color:rgb(187, 15, 187);
+  box-shadow: #a51e1e  3px 4px 10px;
+}
+.skill img {
+  width: 100px;
+  height: 100px;
+}
+.skill h4 {
+  margin-top: 10px;
+}
+
+.contact {
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  margin-top :20px;
+  margin-left :20px;
+  margin-right :20px;
+  margin-bottom :20px;
+ }
+ .contact h3 {
+  font-size :25px;
+ }
+ .contact form {
+  width :500px;
+  display:flex;
+  flex-direction:column;
+ }
+ .contact form input, .contact form textarea {
+  margin :10px;
+  padding :10px;
+  border :1px solid #ccc;
+  /* I added a focus effect to the inputs and textarea */
+  outline:none;
+  transition:border-color .3s;
+ }
+ .contact form input:focus, .contact form textarea:focus {
+  /* I changed the border-color on focus */
+  border-color:#f00;
+ }
+ .contact form input[type="submit"] {
+  background-color :rgb(165, 22, 158);
+  color :red;
+  /* I added a hover effect to the submit button */
+  cursor:pointer;
+  transition:background-color .3s, color .3s;
+ }
+ .contact form input[type="submit"]:hover {
+  /* I changed the background-color and the color on hover */
+  background-color:rgb(51, 173, 255);
+  color:#80137a;
+ }
+ @media (max-width:768px) {
+  /* I made some adjustments for smaller screens */
+  .header h1 {
+  font-size :2rem ;
+  padding :10px ;
+  }
+  .main {
+  flex-direction :column ;
+  }
+  .card {
+  width :100% ;
+  }
+  .about {
+  flex-direction :column ;
+  }
+  .about img.profile-pic {
+  width :200px ;
+  height :200px ;
+  }
+  .contact form {
+  width :100% ;
+  }
+  .services {
+  grid-template-columns :1fr 0;
+  }
+ }
+.services h4{
+  text-align: center;
+  padding-right: 60%;
+}
+
+.services{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  margin-top: 80px;
+  float: center;
+  margin-left: 105px;
+
+}
+.about img.profile-pic {
+  width :300px; 
+  height :300px; 
+  border-radius :50%; 
+  object-fit :cover; 
+  background-color :#a51e1e;
+  position:relative; }
+  .about img.profile-pic::after {
+    content:""; 
+    position:absolute; 
+    top:-5px; 
+    left:-5px; 
+    right:-5px; 
+    bottom:-5px; 
+    border-radius :50%; 
+    border :5px solid var(--accent-color); 
+   }
+   .about img#as{
+    height :10%; 
+    width :10%; 
+    background-color :#a51e1e; 
+   }
+   
+.p{
+padding: 25px 5px;
+height: 55.5%;
+width: 55.5%;
+border: 1px solid  #ccc;
+}
+.p:hover{
+background-color:blue;
+box-shadow: #a51e1e  3px 4px 10px;
+}
+a:hover{
+color: blueviolet;
+background-color: rgb(255, 0, 200);
+}
+.a{
+padding-top: 1px;
+border: 1px solid  #ccc;
+
+} 
+.t img{
+padding-bottom: 20px;
+display: flex;
+}
+.address{
+display:flex; 
+gap: 20px;
+} 
+.call{
+margin-bottom: 10px;
+} 
+.webb:hover{
+background-color:blue;
+box-shadow: rgb(182, 31, 157) ;
+color: #a51e1e;
+}             
+.services.webb{
+
+padding-top: 10px;
+color: #af1896;
+border: 1px solid  rgba(161, 10, 93, 0.933);
+}
+
+@media (max-width: 768px) {
+.header h1 {
+font-size: 2rem;
+padding: 10px;
+}
+}
+.header h1 {
+font-size: 40px;
+color: black;
+animation: scroll 15s infinite;
+}
+@keyframes scroll {
+from { transform: translateX(100%); }
+to { transform: translateX(-100%); }
+}
+.footer P {
+  font-size: 40px;
+  color: black;
+  animation: scroll 20s infinite;
+  }
+  .address{
+    display:flex;  
+    gap:20px;
+   }
+   
+   .address a {
+    display:block;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:#333;
+    color:rgb(165, 26, 142);
+    text-align:center;
+    line-height:40px;
+    text-decoration:none;
+    font-size:20px;
+    /* I added some transitions and hover effects to the icons */
+    transition:transform .3s, background-color .3s, color .3s, box-shadow .3s;
+   }
+   
+   .address a:hover {
+    transform:rotate(360deg);
+    background-color:#f00;
+    color:#fff;
+    box-shadow:#a51e1e 3px 4px 10px;
+   }
+   
